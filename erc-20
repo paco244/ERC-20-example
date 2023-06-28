@@ -7,8 +7,8 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract EPS is ERC20, ERC20Burnable, Pausable, Ownable {
-    constructor() ERC20("EPS", "EPS") {
-        _mint(msg.sender, 100000 * 10 ** decimals());
+    constructor() ERC20("PLD", "PLD") {
+        _mint(msg.sender, 1000 * 10 ** decimals());
     }
 
     function pause() public onlyOwner {
